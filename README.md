@@ -23,8 +23,9 @@ This example starts a Discord bot using [Eris](https://abal.moe/Eris).
 
 - Install dependencies `yarn`
 - Connect to your Railway project `railway link`
-- Start the bot `railway run node .`
+- Build the bot `yarn build`
+- Start the bot `railway run node build`
 
 ## 📝 Notes
 
-The server started launches a Discord bot with a couple of basic commands. The code is located at `src/index.js`.
+The server started launches a Discord bot with a couple of basic commands. The code is located at `src/index.ts`.

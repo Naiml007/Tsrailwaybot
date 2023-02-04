@@ -1,13 +1,22 @@
 {
-  "name": "eris",
-  "version": "1.0.0",
-  "description": "A discord bot made in Eris.",
-  "main": "src/index.js",
-  "repository": "https://github.com/railwayapp/starters",
-  "author": "Yoshida Tomio",
-  "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "eris": "^0.15.1"
-  }
+	"name": "eris",
+	"version": "1.0.0",
+	"description": "A discord bot made in Eris.",
+	"main": "src/index.js",
+	"repository": "https://github.com/railwayapp/starters",
+	"author": "Yoshida Tomio",
+	"license": "MIT",
+	"private": false,
+	"type": "module",
+	"scripts": {
+		"start": "node build/index.js",
+		"build": "tsc"
+	},
+	"dependencies": {
+		"eris": "^0.17.1"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.18",
+		"typescript": "^4.9.5"
+	}
 }
