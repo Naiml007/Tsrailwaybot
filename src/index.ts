@@ -6,11 +6,23 @@ bot.on("ready", () =>
 );
 
 bot.on("messageCreate", (message) => {
+
 	if (message.content === "!ping") {
+
 		bot.createMessage(message.channel.id, "Pong!");
+
 	} else if (message.content === "Hello") {
+
 		bot.createMessage(message.channel.id, "Choo choo! 🚅");
+
+	} else if (message.content === "hello") {
+
+		const username = message.author.username;
+
+		bot.createMessage(message.channel.id, `Fuck Off Mother fucker **${username}**!! 😎`);
+
 	}
+
 });
 
 await bot.connect();
