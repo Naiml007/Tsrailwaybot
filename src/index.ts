@@ -8,6 +8,26 @@ bot.on("ready", () =>
 
 );
 
+const client = new Client(config, {
+
+  intents: [
+
+    GatewayIntentBits.Guilds,
+
+    GatewayIntentBits.GuildMembers,
+
+    GatewayIntentBits.GuildPresences,
+
+    GatewayIntentBits.GuildMessages,
+
+    GatewayIntentBits.DirectMessages,
+
+  ],
+
+  partials: [Partials.Channel],
+
+})
+
 bot.on("messageCreate", async (message) => {
 
   if (message.content.startsWith("!kick")) {
