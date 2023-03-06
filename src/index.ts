@@ -48,5 +48,13 @@ bot.on("messageCreate", (message) => {
 
 });
 
-bot.connect();
+async function startBot() {
+
+  await bot.connect();
+
+  console.log("Bot is now running.");
+
+}
+
+startBot();
 
