@@ -104,5 +104,5 @@ bot.on("messageCreate", async (message) => {
 
 });
 
-bot.connect();
+await bot.connect();
 
